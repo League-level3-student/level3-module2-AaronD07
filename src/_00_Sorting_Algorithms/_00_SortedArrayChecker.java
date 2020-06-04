@@ -42,12 +42,33 @@ public class _00_SortedArrayChecker {
 
 	public static boolean charArraySorted(char[] unsorted) {
 		// TODO Auto-generated method stub
-		return false;
+		int previous = unsorted[0];
+		boolean sorted = true;
+		for (int i = 0; i < unsorted.length; i++) {
+			if (unsorted[i] < previous) {
+				sorted = false;
+
+			} 
+			previous = unsorted[i];
+		}
+		return sorted;
+		
 	}
 
 	public static boolean stringArraySorted(String[] sorted) {
 		// TODO Auto-generated method stub
-		return false;
+
+		String previous = sorted[0];
+		boolean yeet = true;
+		for (int i = 0; i < sorted.length; i++) {
+			if (sorted[i].compareTo(previous)<0) {
+				yeet = false;
+
+			} 
+			previous = sorted[i];
+		}
+		return yeet;
+		
 	}
 
 	// 2. Write a static method called doubleArraySorted.
