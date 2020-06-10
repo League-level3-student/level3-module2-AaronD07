@@ -46,7 +46,7 @@ class _01_SwappingDigits {
 	for(int i =0; i<arr.length; i++) {
 		
 		
-			if (arr[i] < previous) {
+			if (arr[i] <= previous) {
 int one = arr[i];
 int two = arr[i-1];
 
