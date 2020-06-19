@@ -17,7 +17,16 @@ public class MergeSorter extends Sorter {
 	
 	private void mergeSort(int[] array, int low, int high, SortingVisualizer display) {
 		//1. Create a temporary integer array that is the same length as the passed in array.
-		
+		int[] array1 = new int[array.length];
+		if (low<high) {
+			int middle = (low+high)/2;
+			mergeSort(array1, low, middle, display);
+			mergeSort(array1, middle+1, high, display);
+			
+			for(int i=0; i<array.length; i++) {
+				
+			}
+		}
 		//2. make an if statement that checks if low is less than high
 		//   and put the rest of the method inside of it
 

@@ -1,5 +1,6 @@
 package _01_Searching_Algorithms;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
@@ -11,6 +12,10 @@ class _04_SearchTest {
 	@Test
 	public void testLinearSearch() {
 		//1. use the assertEquals method to test your linear search method.
+		String[] words = {"A", "B", "C", "D", "E", "F"};
+		assertEquals(2, _00_LinearSearch.linearSearch(words, "C"));
+		assertEquals(0, _00_LinearSearch.linearSearch(words, "A"));
+		assertEquals(-1, _00_LinearSearch.linearSearch(words, "Y"));
 	}
 
 	@Test
