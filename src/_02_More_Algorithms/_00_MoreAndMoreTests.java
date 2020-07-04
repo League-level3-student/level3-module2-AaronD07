@@ -1,8 +1,8 @@
 package _02_More_Algorithms;
 
 import static org.junit.Assert.*;
-
-import org.junit.Test;
+import  org.junit.Test;
+import static org.junit.Assert.assertTrue;
 
 /**
  * Uncomment each test and then write the method to make it pass.
@@ -18,44 +18,45 @@ public class _00_MoreAndMoreTests {
 	    assertEquals("8 * 11 = 88", Mult.Mult(8, 11));
 	  }
 
-//	@Test
-//	  public void PrimeTest() {
-//
-//	    assertTrue(isPrime(3));
-//	    assertTrue(isPrime(5));
-//	    assertTrue(isPrime(541));
-//	    assertFalse(isPrime(4));
-//	    assertFalse(isPrime(12));
-//	    assertFalse(isPrime(527));
-//
-//	  }
-//
-//	@Test
-//	  public void SquareTest() {
-//
-//	    assertTrue(isSquare(4));
-//	    assertTrue(isSquare(144));
-//	    assertTrue(isSquare(64));
-//	    assertTrue(isSquare(10201));
-//	    assertTrue(isSquare(1));
-//	    assertFalse(isSquare(3));
-//	    assertFalse(isSquare(22));
-//	    assertFalse(isSquare(143));
-//
-//	  }
-//
-//	@Test
-//	  public void CubeTest() {
-//
-//	    assertTrue(isCube(27));
-//	    assertTrue(isCube(216));
-//	    assertTrue(isCube(729));
-//	    assertTrue(isCube(1));
-//	    assertFalse(isCube(3));
-//	    assertFalse(isCube(22));
-//	    assertFalse(isCube(143));
-//
-//	  }
+	@Test
+	  public void PrimeTest() {
+
+	    assertTrue(Prime.Prime(3));
+	    assertTrue(Prime.Prime(5));
+	    assertTrue(Prime.Prime(541));
+	    assertFalse(Prime.Prime(4));
+	    assertFalse(Prime.Prime(12));
+	    assertFalse(Prime.Prime(527));
+
+
+	  }
+
+	@Test
+	  public void SquareTest() {
+
+	    assertTrue(Square.isSquare(4));
+	    assertTrue(Square.isSquare(144));
+	    assertTrue(Square.isSquare(64));
+	    assertTrue(Square.isSquare(10201));
+	    assertFalse(Square.isSquare(3));
+	    assertFalse(Square.isSquare(22));
+	    assertFalse(Square.isSquare(143));
+	    assertTrue(Square.isSquare(1));
+
+
+	  }
+
+	@Test
+	  public void CubeTest() {
+
+	    assertTrue(Cube.isCubed(27));
+	    assertTrue(Cube.isCubed(216));
+	    assertTrue(Cube.isCubed(729));
+	    assertTrue(Cube.isCubed(1));
+	    assertFalse(Cube.isCubed(3));
+	    assertFalse(Cube.isCubed(22));
+
+	  }
 
 
 
