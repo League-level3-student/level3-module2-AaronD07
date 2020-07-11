@@ -33,6 +33,6 @@ public class IntroToRecursion {
 	}
 	
 	public static void main(String[] args) {
-		countDown(20);
+		countDown(30);
 	}
 }

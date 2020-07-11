@@ -77,15 +77,22 @@ public class Algorithms {
 
 			for (int i = 1; i < unSortedSequences.size(); i++) {
 
-				if (unSortedSequences.get(i).length() > unSortedSequences.get(i + 1).length()) {
+				if (unSortedSequences.get(i-1).length() > unSortedSequences.get(i).length()) {
 					String x = unSortedSequences.get(i);
-					unSortedSequences.set(i, unSortedSequences.get(i + 1));
-					unSortedSequences.set(i + 1, x);
+					unSortedSequences.set(i, unSortedSequences.get(i -1));
+					unSortedSequences.set(i -1, x);
 				}
 			}
 		}
 		// TODO Auto-generated method stub
 		return unSortedSequences;
+	}
+
+	public static List<String> sortWords(List<String> words) {
+		// TODO Auto-generated method stub
+		for(int i =1; i<words.size(); i++) {
+		}	
+		return null;
 	}
 
 }
