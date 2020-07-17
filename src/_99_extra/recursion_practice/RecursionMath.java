@@ -22,10 +22,10 @@ public class RecursionMath {
 	// 6. Try this one on your own!
 	// Hint: if numberToDevideBy is bigger than number, you can't divide anymore
 	public static int recursiveDivision(int number, int numberToDevideBy) {
-		if (numberToDevideBy > number) {
+		if (numberToDevideBy >= number) {
 			return number;
 		} else {
-			return number + recursiveDivision(number, numberToDevideBy);
+			return number / recursiveDivision(number, numberToDevideBy +1) ;
 		}
 	}
 
@@ -34,7 +34,7 @@ public class RecursionMath {
 		if (power <= 1) {
 			return number;
 		} else {
-			return number + recursivePower(number, power);
+			return number * recursivePower(number, power-1);
 		}
 
 	}
